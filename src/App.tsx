@@ -8,10 +8,11 @@ import { useThottle } from "./hooks/debounce";
 const DEFAULT_HTML =
   `<!DOCTYPE html><html><head><style>body{margin: 20px; font-family: Arial, sans-serif;}` +
   `.container{max-width: 500px; margin: 0 auto;}h2{margin-bottom: 5px;}</style></head><body><div class="container">` +
-  `<img src="http://localhost:3000/pen.png" height="50" alt="Pen"/> <p>Turn your ideas into ... lol. Just kidding. ` +
-  `Do whatever you want</p><p><i>Now type some code to get rid of this dumb page.</i></p><h2>What is that?</h2> <p>This ` +
-  `is a website for lazy devs like me to test html code. For example test how the email will look like.</p><h2>Who developed ` +
-  `that</h2> <p><a href="https://github.com/TheMisir" target="_blank">Me</a></p><h2>Found a bug?</h2> <p>¯\\_(ツ)_/¯</p><hr/>` +
+  `<img src="${window.location.protocol}//${window.location.hostname}/pen.png" height="50" alt="Pen"/>` +
+  `<p>Turn your ideas into ... lol. Just kidding. Do whatever you want</p><p><i>Now type some code to get ` +
+  `rid of this dumb page.</i></p><h2>What is that?</h2> <p>This is a website for lazy devs like me to test html code. ` +
+  `For example test how the email will look like.</p><h2>Who developed that</h2>` +
+  `<p><a href="https://github.com/TheMisir" target="_blank">Me</a></p><h2>Found a bug?</h2> <p>¯\\_(ツ)_/¯</p><hr/>` +
   `<p><small><a href="" target="_blank">Want to contribute?</a></small></p></div></body></html>`;
 
 const DEFAULT_PAGE = URL.createObjectURL(
