@@ -30,18 +30,14 @@ const App: React.FC = () => {
 
   const setPreview = useCallback(
     (html: string | null | undefined) => {
-      let url = "";
+      let url = DEFAULT_PAGE;
 
       if (html) {
         url = URL.createObjectURL(new Blob([html], { type: "text/html" }));
-      } else {
-        url = DEFAULT_PAGE;
       }
 
       setFrameUrl((current) => {
-        if (current.startsWith("blob:")) {
-          URL.revokeObjectURL(current);
-        }
+        current !== DEFAULT_PAGE && URL.revokeObjectURL(current);
         return url;
       });
     },
