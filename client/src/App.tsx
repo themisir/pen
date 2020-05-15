@@ -13,7 +13,7 @@ const DEFAULT_HTML =
   `rid of this dumb page.</i></p><h2>What is that?</h2> <p>This is a website for lazy devs like me to test html code. ` +
   `For example test how the email will look like.</p><h2>Who developed that</h2>` +
   `<p><a href="https://github.com/TheMisir" target="_blank">Me</a></p><h2>Found a bug?</h2> <p>¯\\_(ツ)_/¯</p><hr/>` +
-  `<p><small><a href="" target="_blank">Want to contribute?</a></small></p></div></body></html>`;
+  `<p><small><a href="https://github.com/TheMisir/pen" target="_blank">Want to contribute?</a></small></p></div></body></html>`;
 
 const DEFAULT_PAGE = URL.createObjectURL(
   new Blob([DEFAULT_HTML], { type: "text/html" })
